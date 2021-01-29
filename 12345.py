@@ -13,7 +13,7 @@ driver.get(baseurl)
 #driver.find_element(By.ID,"details-button").click()
 #driver.find_element(By.ID,"proceed-link").click()
 driver.find_element(By.ID,"label_username").send_keys("15j41a0441@gmail.com")
-driver.find_element(By.ID,"label_password").send_keys("9963626210@v")
+driver.find_element(By.ID,"label_password").send_keys("XXXXXXXXXXX")
 driver.find_element(By.ID,"loginPage_LoginButton_label").click()
 time.sleep(10)
 #delay=3
