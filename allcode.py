@@ -10,14 +10,14 @@ import multiprocessing
 #from selenium.webdriver.common.action_chains import ActionChains
 #from selenium.webdriver.common.keys import Keys
 import time
-baseurl="https://10.104.119.76"
-baseurl1="https://10.104.119.201"
+baseurl="https://10.104.xx.xx"
+baseurl1="https://10.104.xx.xx"
 driver = webdriver.Chrome(executable_path="C:\\Users\\ramacgad\\Desktop\\software updates\\3.7\\chromedriver.exe")
 driver.get(baseurl)
 driver.find_element(By.ID,"details-button").click()
 driver.find_element(By.ID,"proceed-link").click()
 driver.find_element(By.ID,"label_username").send_keys("root")
-driver.find_element(By.ID,"label_password").send_keys("Public123")
+driver.find_element(By.ID,"label_password").send_keys("xxxxxxx")
 driver.find_element(By.ID,"loginPage_LoginButton_label").click()
 driver.execute_script("window.open('" + baseurl1 + "');")
 driver.quit(baseurl)
@@ -52,13 +52,13 @@ def chromedriver_function(url):
     driver.find_element(By.ID,"details-button").click()
     driver.find_element(By.ID,"proceed-link").click()
     driver.find_element(By.ID,"label_username").send_keys("root")
-    driver.find_element(By.ID,"label_password").send_keys("Public123")
+    driver.find_element(By.ID,"label_password").send_keys("xxxxxx")
     driver.find_element(By.ID,"loginPage_LoginButton_label").click()
     return driver.page_source
 
 
-chromedriver_function("https://10.104.119.75")
-#chromedriver_function("https//:10.104.119.76")
+chromedriver_function("https://10.104.xxx.xxx")
+#chromedriver_function("https//:10.104.xxxx.xxxx")
 
 #driver.get.Windowhandles
 
@@ -85,14 +85,14 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 import time
 
-baseurl="https://10.197.72.84"
-baseurl1="https://10.104.119.201"
+baseurl="https://10.197.xx.xx"
+baseurl1="https://10.104.xxx.xxxx"
 driver = webdriver.Chrome(executable_path="C:\\Users\\ramacgad\\Desktop\\software updates\\3.7\\chromedriver.exe")
 driver.get(baseurl)
 driver.find_element(By.ID,"details-button").click()
 driver.find_element(By.ID,"proceed-link").click()
 driver.find_element(By.ID,"label_username").send_keys("root")
-driver.find_element(By.ID,"label_password").send_keys("roZes123")
+driver.find_element(By.ID,"label_password").send_keys("xxxxxxx")
 driver.find_element(By.ID,"loginPage_LoginButton_label").click()
 time.sleep(10)
 delay=3
