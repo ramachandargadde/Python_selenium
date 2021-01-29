@@ -5,7 +5,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 
-baseUrl = "https://10.197.72.90"
+baseUrl = "https://10.197.xx.xx"
 driver = webdriver.Chrome(executable_path="C:\\Users\\ramacgad\\Desktop\\software updates\\3.7\\chromedriver.exe")
 driver.get(baseUrl)
 try:
@@ -15,5 +15,5 @@ finally:
 username=driver.find_element_by_id("label_username")
 password=driver.find_element_by_id("label_password")
 username.send_keys("root")
-password.send_keys("roZes123")
+password.send_keys("xxxxxxx")
 driver.quit()
